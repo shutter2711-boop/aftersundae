@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - After Sundae Band</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bandCream: '#f6f5f1',
+                        bandDark: '#2a2a2a',
+                        bandOrange: '#f27b35',
+                    },
+                    fontFamily: {
+                        prompt: ['Prompt', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bandCream text-bandDark font-prompt min-h-screen flex flex-col">
+
+    <header class="flex border-b border-bandDark">
+        <div class="w-16 flex-shrink-0 flex items-center justify-center border-r border-bandDark py-3 cursor-pointer hover:bg-bandOrange hover:text-white transition-colors duration-300">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </div>
+        
+        <nav class="flex overflow-x-auto">
+            <a href="index.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">HOME</a>
+            <a href="profile.html" class="px-6 py-3 border-r border-bandDark font-semibold bg-bandDark text-white hover:bg-bandOrange transition-colors duration-300 whitespace-nowrap">PROFILE</a>
+            <a href="history.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">HISTORY</a>
+            <a href="community.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">COMMUNITY</a>
+        </nav>
+    </header>
+
+    <main class="flex flex-1">
+        <aside class="w-16 flex-shrink-0 border-r border-bandDark"></aside>
+
+        <div class="flex-1 flex flex-col p-8 md:p-12">
+            
+            <div class="border-b border-bandDark pb-4 mb-10 flex justify-between items-end">
+                <h1 class="text-3xl md:text-4xl font-bold tracking-wider">BAND MEMBERS</h1>
+                <span class="text-bandOrange font-semibold">After sundae</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="flex flex-col items-center border border-bandDark p-8 hover:-translate-y-2 transition-transform duration-300 bg-white/30">
+                    <div class="w-32 h-32 rounded-full border-2 border-bandDark mb-6 overflow-hidden flex items-center justify-center bg-bandDark/5">
+                        <img src="vocal1.jpg" alt="Vocalist 1" class="w-full h-full object-cover text-xs text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูป]' ">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-1">Eclair</h2>
+                    <p class="text-bandOrange font-semibold tracking-widest mb-6">VOCAL</p>
+                    <a href="member_vocal1.html" class="px-6 py-2 border border-bandDark text-sm font-semibold rounded-full hover:bg-bandOrange hover:text-white hover:border-bandOrange transition-colors">VIEW PROFILE</a>
+                </div>
+
+                <div class="flex flex-col items-center border border-bandDark p-8 hover:-translate-y-2 transition-transform duration-300 bg-white/30">
+                    <div class="w-32 h-32 rounded-full border-2 border-bandDark mb-6 overflow-hidden flex items-center justify-center bg-bandDark/5">
+                        <img src="vocal2.jpg" alt="Vocalist 2" class="w-full h-full object-cover text-xs text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูป]' ">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-1">Jumper</h2>
+                    <p class="text-bandOrange font-semibold tracking-widest mb-6">VOCAL</p>
+                    <a href="member_vocal2.html" class="px-6 py-2 border border-bandDark text-sm font-semibold rounded-full hover:bg-bandOrange hover:text-white hover:border-bandOrange transition-colors">VIEW PROFILE</a>
+                </div>
+
+                <div class="flex flex-col items-center border border-bandDark p-8 hover:-translate-y-2 transition-transform duration-300 bg-white/30">
+                    <div class="w-32 h-32 rounded-full border-2 border-bandDark mb-6 overflow-hidden flex items-center justify-center bg-bandDark/5">
+                        <img src="guitar1.jpg" alt="Guitarist 1" class="w-full h-full object-cover text-xs text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูป]' ">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-1">None</h2>
+                    <p class="text-bandOrange font-semibold tracking-widest mb-6">GUITAR</p>
+                    <a href="member_guitar1.html" class="px-6 py-2 border border-bandDark text-sm font-semibold rounded-full hover:bg-bandOrange hover:text-white hover:border-bandOrange transition-colors">VIEW PROFILE</a>
+                </div>
+
+                <div class="flex flex-col items-center border border-bandDark p-8 hover:-translate-y-2 transition-transform duration-300 bg-white/30">
+                    <div class="w-32 h-32 rounded-full border-2 border-bandDark mb-6 overflow-hidden flex items-center justify-center bg-bandDark/5">
+                        <img src="guitar2.jpg" alt="Guitarist 2" class="w-full h-full object-cover text-xs text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูป]' ">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-1">Unda</h2>
+                    <p class="text-bandOrange font-semibold tracking-widest mb-6">GUITAR</p>
+                    <a href="member_guitar2.html" class="px-6 py-2 border border-bandDark text-sm font-semibold rounded-full hover:bg-bandOrange hover:text-white hover:border-bandOrange transition-colors">VIEW PROFILE</a>
+                </div>
+
+                <div class="flex flex-col items-center border border-bandDark p-8 hover:-translate-y-2 transition-transform duration-300 bg-white/30">
+                    <div class="w-32 h-32 rounded-full border-2 border-bandDark mb-6 overflow-hidden flex items-center justify-center bg-bandDark/5">
+                        <img src="bass.jpg" alt="Bassist" class="w-full h-full object-cover text-xs text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูป]' ">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-1">Stang</h2>
+                    <p class="text-bandOrange font-semibold tracking-widest mb-6">BASS</p>
+                    <a href="member_bass.html" class="px-6 py-2 border border-bandDark text-sm font-semibold rounded-full hover:bg-bandOrange hover:text-white hover:border-bandOrange transition-colors">VIEW PROFILE</a>
+                </div>
+
+                <div class="flex flex-col items-center border border-bandDark p-8 hover:-translate-y-2 transition-transform duration-300 bg-white/30">
+                    <div class="w-32 h-32 rounded-full border-2 border-bandDark mb-6 overflow-hidden flex items-center justify-center bg-bandDark/5">
+                        <img src="drum.jpg" alt="Drummer" class="w-full h-full object-cover text-xs text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูป]' ">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-1">Shutter</h2>
+                    <p class="text-bandOrange font-semibold tracking-widest mb-6">DRUM</p>
+                    <a href="member_drum.html" class="px-6 py-2 border border-bandDark text-sm font-semibold rounded-full hover:bg-bandOrange hover:text-white hover:border-bandOrange transition-colors">VIEW PROFILE</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclair (Vocal) - After Sundae Band</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bandCream: '#f6f5f1',
+                        bandDark: '#2a2a2a',
+                        bandOrange: '#f27b35',
+                    },
+                    fontFamily: {
+                        prompt: ['Prompt', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bandCream text-bandDark font-prompt min-h-screen flex flex-col">
+
+    <header class="flex border-b border-bandDark">
+        <div class="w-16 flex-shrink-0 flex items-center justify-center border-r border-bandDark py-3 cursor-pointer hover:bg-bandOrange hover:text-white transition-colors duration-300">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </div>
+        
+        <nav class="flex overflow-x-auto">
+            <a href="index.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">HOME</a>
+            <a href="profile.html" class="px-6 py-3 border-r border-bandDark font-semibold bg-bandDark text-white hover:bg-bandOrange transition-colors duration-300 whitespace-nowrap">PROFILE</a>
+            <a href="history.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">HISTORY</a>
+            <a href="community.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">COMMUNITY</a>
+        </nav>
+    </header>
+
+    <main class="flex flex-1">
+        <aside class="w-16 flex-shrink-0 border-r border-bandDark"></aside>
+
+        <div class="flex-1 flex flex-col p-8 md:p-12">
+            
+            <div class="mb-8">
+                <a href="profile.html" class="inline-flex items-center text-bandDark hover:text-bandOrange font-semibold transition-colors duration-300 group">
+                    <svg class="w-6 h-6 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    BACK TO MEMBERS
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="col-span-2 aspect-video border-2 border-bandDark overflow-hidden flex items-center justify-center bg-white/30 hover:shadow-[8px_8px_0px_0px_rgba(42,42,42,1)] transition-shadow duration-300">
+                        <img src="eclair_pic1.jpg" alt="Eclair Pic 1" class="w-full h-full object-cover text-sm text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูปที่ 1 รูปแนวนอน]'">
+                    </div>
+                    <div class="aspect-square border-2 border-bandDark overflow-hidden flex items-center justify-center bg-white/30 hover:shadow-[6px_6px_0px_0px_rgba(42,42,42,1)] transition-shadow duration-300">
+                        <img src="eclair_pic2.jpg" alt="Eclair Pic 2" class="w-full h-full object-cover text-sm text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูปที่ 2 รูปจัตุรัส]'">
+                    </div>
+                    <div class="aspect-square border-2 border-bandDark overflow-hidden flex items-center justify-center bg-white/30 hover:shadow-[6px_6px_0px_0px_rgba(42,42,42,1)] transition-shadow duration-300">
+                        <img src="eclair_pic3.jpg" alt="Eclair Pic 3" class="w-full h-full object-cover text-sm text-center flex items-center justify-center text-gray-400" onerror="this.outerHTML='[ใส่รูปที่ 3 รูปจัตุรัส]'">
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-2">เอแคลร์</h1>
+                    <h2 class="text-2xl md:text-3xl font-light mb-2">นฤภร ตระกูลตั้งอนันต์</h2>
+                    <p class="text-bandOrange font-bold tracking-widest text-xl mb-10">VOCAL</p>
+
+                    <div class="space-y-4 text-lg border-t border-bandDark pt-8">
+                        <p class="flex items-start">
+                            <span class="font-bold w-24 shrink-0">อายุ :</span> 
+                            <span>15 ปี</span>
+                        </p>
+                        <p class="flex items-start">
+                            <span class="font-bold w-24 shrink-0">วันเกิด :</span> 
+                            <span>จันทร์ ที่ 13 ธันวาคม 2553</span>
+                        </p>
+                        
+                        <div class="flex items-start mt-6">
+                            <span class="font-bold w-24 shrink-0">การศึกษา :</span>
+                           <ul class="list-none space-y-3">
+    <li><span class="inline-block w-3 h-3 bg-bandOrange rounded-full mr-2"></span><span class="font-semibold border-b border-bandDark pb-1">ระดับอนุบาล</span><br>โรงเรียนเกตุพิชัยวิทยา สระบุรี</li>
+    <li><span class="inline-block w-3 h-3 bg-bandOrange rounded-full mr-2"></span><span class="font-semibold border-b border-bandDark pb-1">ระดับประถมศึกษา</span><br>โรงเรียนเกตุพิชัยวิทยา สระบุรี</li>
+    <li><span class="inline-block w-3 h-3 bg-bandOrange rounded-full mr-2"></span><span class="font-semibold border-b border-bandDark pb-1">ระดับมัธยมต้น</span><br>โรงเรียนสระบุรีวิทยาคม</li>
+    <li><span class="inline-block w-3 h-3 bg-bandOrange rounded-full mr-2"></span><span class="font-semibold border-b border-bandDark pb-1 text-bandOrange">ระดับมัธยมปลาย (ปัจจุบัน)</span><br>โรงเรียนสระบุรีวิทยาคม</li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

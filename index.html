@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Sundae Band</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bandCream: '#f6f5f1',
+                        bandDark: '#2a2a2a',
+                        bandOrange: '#f27b35',
+                    },
+                    fontFamily: {
+                        prompt: ['Prompt', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bandCream text-bandDark font-prompt min-h-screen flex flex-col">
+
+    <header class="flex border-b border-bandDark">
+        <div class="w-16 flex-shrink-0 flex items-center justify-center border-r border-bandDark py-3 cursor-pointer hover:bg-bandOrange hover:text-white transition-colors duration-300">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </div>
+        
+        <nav class="flex overflow-x-auto">
+            <a href="index.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">HOME</a>
+            <a href="profile.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">PROFILE</a>
+            <a href="history.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">HISTORY</a>
+            <a href="community.html" class="px-6 py-3 border-r border-bandDark font-semibold hover:bg-bandOrange hover:text-white transition-colors duration-300 whitespace-nowrap">COMMUNITY</a>
+        </nav>
+    </header>
+
+    <main class="flex flex-1">
+        <aside class="w-16 flex-shrink-0 border-r border-bandDark"></aside>
+
+        <div class="flex-1 flex flex-col">
+            
+            <section class="flex-1 border-b border-bandDark flex items-center justify-center p-8 min-h-[300px]">
+                <img src="logo.png" alt="After Sundae Logo" class="max-w-[350px] w-full mix-blend-multiply">
+            </section>
+
+            <section class="flex-1 border-b border-bandDark flex items-center justify-center p-8 min-h-[200px] hover:bg-black/5 transition-colors">
+                <h2 class="text-xl font-light opacity-40 tracking-widest">[ พื้นที่สำหรับใส่เนื้อหา HISTORY หรือ PROFILE ]</h2>
+            </section>
+
+            <section class="flex-1 flex items-center justify-center p-8 min-h-[200px] hover:bg-black/5 transition-colors">
+                <h2 class="text-xl font-light opacity-40 tracking-widest">[ พื้นที่สำหรับใส่คิวงาน หรือ COMMUNITY ]</h2>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
